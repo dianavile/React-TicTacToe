@@ -3,12 +3,12 @@ React, tictactoe game
 
 ## Workflow 
 Install
-- 1 [V] Install React with Create-React-App ```npx create-react-app react-tictactoe```
+- 1 [X] Install React with Create-React-App ```npx create-react-app react-tictactoe```
 
 Setup
-- 2 [] Add startersfiles to React project
-- 3 [] Pass data through props
-- 4 [] Make an internative Component 
+- 2 [X] Add startersfiles to React project
+- 3 X[] Pass data through props
+- 4 [X] Make an internative Component 
 
 Complete the game
 - 5 [] Raise the State
