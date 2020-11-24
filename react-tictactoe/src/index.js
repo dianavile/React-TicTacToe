@@ -4,25 +4,23 @@ import './index.css';
 //import App from './App';
 //import reportWebVitals from './reportWebVitals';
 
-//Square component (= functional component)
 function Square(props) {
   return (
     <button className="square" onClick={props.onClick}>
       {props.value}
     </button>
-  );
+  );  
 }
 
-//Board component
 class Board extends React.Component {
-   constructor(props) {
+  constructor(props) {
     super(props);
-     this.state = {
-       squares: Array(9).fill(null),
-       xIsNext: true,
-     };
-   }
-  
+    this.state = {
+      squares: Array(9).fill(null),
+      xIsNext: true,
+    }
+  }
+
   handleClick(i) {
     const squares = this.state.squares.slice();
     if (calculateWinner(squares) || squares[i]) {
@@ -39,7 +37,7 @@ class Board extends React.Component {
     return (
       <Square
         value={this.state.squares[i]}
-        onClick={() => this.handleClick(i)}
+        onClick={() => this.handleClick(i)} 
       />
     );
   }
@@ -50,7 +48,7 @@ class Board extends React.Component {
     if (winner) {
       status = 'Winner: ' + winner;
     } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O'); 
     }
 
     return (
@@ -76,7 +74,6 @@ class Board extends React.Component {
   }
 }
 
-//Game component
 class Game extends React.Component {
   render() {
     return (
@@ -93,15 +90,7 @@ class Game extends React.Component {
   }
 }
 
-// ========================================
 
-ReactDOM.render(
-  <Game />,
-  document.getElementById('root')
-);
-
-
-//Helper function
 function calculateWinner(squares) {
   const lines = [
     [0, 1, 2],
@@ -121,6 +110,15 @@ function calculateWinner(squares) {
   }
   return null;
 }
+
+// ========================================
+
+ReactDOM.render(
+  <Game />,
+  document.getElementById('root')
+);
+
+
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
