@@ -1,8 +1,6 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-//import App from './App';
-//import reportWebVitals from './reportWebVitals';
 
 function Square(props) {
   return (
@@ -19,7 +17,7 @@ class Board extends React.Component {
   renderSquare(i) {
     return (
       <Square
-        isWin={this.props.winningSquares.includes(i)}
+        isWinning={this.props.winningSquares.includes(i)}
         key={"square " + i}
         value={this.props.squares[i]}
         onClick={() => this.props.onClick(i)} 
@@ -130,9 +128,11 @@ class Game extends React.Component {
 
     let status;
     if (winner) {
-      status = 'Winner: ' + winner;
+      status = "Winner: " + winner.player + " @ " + winner.line;
+    } else if (!current.squares.includes(null)) {
+      status = "draw";
     } else {
-      status = 'Next player: ' + (this.state.xIsNext ? 'X' : 'O');
+      status = "Next player: " + (this.state.xIsNext ? "X" : "O");
     }
 
     return (
@@ -141,7 +141,7 @@ class Game extends React.Component {
           <Board
             winningSquares={winner ? winner.line : []}
             squares={current.squares}
-            onClick={(i) => this.handleClick(i)}
+            onClick={i => this.handleClick(i)}
           />
         </div>
         <div className="game-info">
@@ -182,9 +182,3 @@ ReactDOM.render(
   <Game />,
   document.getElementById('root')
 );
-
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-//reportWebVitals();
