@@ -1,6 +1,12 @@
 # react-tictactoe
 React, tictactoe game
 
+## Features 
+- Play tic-tac-toe
+- Indicates when a player has won the game
+- Stores game’s history as game progresses
+- Allows players to review game’s history and see previous versions of the game’s board.
+
 ## Workflow 
 Install
 - [X] 1 Install React with Create-React-App ```npx create-react-app react-tictactoe```
