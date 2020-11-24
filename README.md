@@ -13,8 +13,8 @@ Setup
 Complete the game
 - 5 [X] Raise the State
 - 6 [X] Add functional components
-- 7 [] Take turns
-- 8 [] Declare a winner 
+- 7 [X] Take turns
+- 8 [X] Declare a winner 
 
 Add time travel
 -  9 [] commit1 Store history of movements 
