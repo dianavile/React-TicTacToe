@@ -11,7 +11,7 @@ Setup
 - 4 [X] Make an internative Component 
 
 Complete the game
-- 5 [] Raise the State
+- 5 [X] Raise the State
 - 6 [] Add functional components
 - 7 [] Take turns
 - 8 [] Declare a winner 
