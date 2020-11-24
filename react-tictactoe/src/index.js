@@ -49,9 +49,11 @@ class Game extends React.Component {
   constructor(props) {
     super(props);
     this.state = {
-      history: [{
+      history: [
+        {
         squares: Array(9).fill(null),
-      }],
+        }
+      ],
       stepNumber: 0,
       xIsNext: true,
     };
@@ -66,9 +68,11 @@ class Game extends React.Component {
     }
     squares[i] = this.state.xIsNext ? 'X' : 'O';
     this.setState({
-      history: history.concat([{
+      history: history.concat([
+        {
         squares: squares,
-      }]),
+        }
+      ]),
       stepNumber: history.length,
       xIsNext: !this.state.xIsNext,
     });
