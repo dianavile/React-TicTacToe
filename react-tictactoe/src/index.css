@@ -53,6 +53,10 @@ ol, ul {
   background: #ddd;
 }
 
+.square--win {
+  background-color:green;
+}
+
 .game {
   display: flex;
   flex-direction: row;
