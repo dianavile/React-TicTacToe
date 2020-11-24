@@ -9,24 +9,31 @@ React, tictactoe game
 
 ## Workflow 
 Install
-- [X] 1 Install React with Create-React-App ```npx create-react-app react-tictactoe```
+- [X] Install React with Create-React-App ```npx create-react-app react-tictactoe```
 
 Setup
-- [X] 2 Add startersfiles to React project
-- [X] 3 Pass data through props
-- [X] 4 Make an internative Component 
+- [X] Add startersfiles to React project
+- [X] Pass data through props
+- [X] Make an internative Component 
 
 Complete the game
-- [X] 5 Raise the State
-- [X] 6 Add functional components
-- [X] 7 Take turns
-- [X] 8 Declare a winner 
+- [X] Raise the State
+- [X] Add functional components
+- [X] Take turns
+- [X] Declare a winner 
 
 Add time travel
-- [X] 9 Store history of movements 
-- [X] 10 Raise the State
-- [X] 11 Show previous moves
-- [X] 12 Choose a key 
-- [X] 13 Implement time travel 
-- [X] 14 Debug & Refactor code 
+- [X] Store history of movements 
+- [X] Raise the State
+- [X] Show previous moves
+- [X] Choose a key 
+- [X] Implement time travel 
+- [X] Debug & Refactor code 
 
+Game Improvements 
+- [] Display the location for each move in the format (col, row) in the move history list.
+- [] Bold the currently selected item in the move list.
+- [] Rewrite Board to use two loops to make the squares instead of hardcoding them.
+- [] Add a toggle button that lets you sort the moves in either ascending or descending order.
+- [] When someone wins, highlight the three squares that caused the win.
+- [] When no one wins, display a message about the result being a draw.
