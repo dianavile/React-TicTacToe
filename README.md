@@ -23,10 +23,10 @@ Complete the game
 - [X] 8 Declare a winner 
 
 Add time travel
-- [X] 9 commit1 Store history of movements 
-- [X] 10 commit2 Raise the State
-- [X] 11 commit3 Show previous moves
-- [X] 12 commit4 Choose a key 
-- [X] 13 commit5 Implement time travel 
-- [X] 14 commit6 Debug & Refactor code 
+- [X] 9 Store history of movements 
+- [X] 10 Raise the State
+- [X] 11 Show previous moves
+- [X] 12 Choose a key 
+- [X] 13 Implement time travel 
+- [X] 14 Debug & Refactor code 
 
