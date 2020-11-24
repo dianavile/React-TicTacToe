@@ -7,6 +7,8 @@ React, tictactoe game
 - Stores game’s history as game progresses
 - Allows players to review game’s history and see previous versions of the game’s board.
 
+![React-tictactoe game](https://github.com/dianavile/react-tictactoe/blob/main/React-tictactoe.JPG)
+
 ## Workflow 
 Install
 - [X] Install React with Create-React-App ```npx create-react-app react-tictactoe```
@@ -37,3 +39,6 @@ Game Improvements
 - [X] Commit #4: Add a toggle button that lets you sort the moves in either ascending or descending order.
 - [X] Commit #5: If player wins, highlight the three squares that caused the win.
 - [X] Commit #6: When no one wins, display a message about the result being a draw.
+
+### Resources
+- [React Tutorial](https://reactjs.org/tutorial/tutorial.html)
