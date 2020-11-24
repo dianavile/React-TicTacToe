@@ -7,12 +7,12 @@ Install
 
 Setup
 - 2 [X] Add startersfiles to React project
-- 3 X[] Pass data through props
+- 3 [X] Pass data through props
 - 4 [X] Make an internative Component 
 
 Complete the game
 - 5 [X] Raise the State
-- 6 [] Add functional components
+- 6 [X] Add functional components
 - 7 [] Take turns
 - 8 [] Declare a winner 
 
