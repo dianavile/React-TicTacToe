@@ -70,18 +70,18 @@ class Game extends React.Component {
     this.setState({
       history: history.concat([
         {
-        squares: squares,
+        squares: squares
         }
       ]),
       stepNumber: history.length,
-      xIsNext: !this.state.xIsNext,
+      xIsNext: !this.state.xIsNext
     });
   }
 
   jumpTo(step) {
     this.setState({
       stepNumber: step,
-      xIsNext: (step % 2) === 0,
+      xIsNext: (step % 2) === 0
     });
   }
 
